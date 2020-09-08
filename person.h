@@ -5,8 +5,6 @@
 
 namespace PERSON
 {
-
-
    class Person
    {
      private:
@@ -24,7 +22,5 @@ namespace PERSON
 
        std::string Get_Month_Horoscope();
        std::string Get_Year_Horoscope();
-
    };
-
 }
