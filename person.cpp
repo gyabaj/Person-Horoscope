@@ -3,10 +3,10 @@
 
 namespace PERSON
 {
-     Person::Person():fName(""),lName(""),bYear(0),bMonth(0),bDay(0){}
-     Person::Person(std::string fN, std::string lN, int bY, int bM, int bD):
+     Person::Person() : fName(""), lName(""), bYear(0), bMonth(0), bDay(0){}
+     Person::Person(std::string fN, std::string lN, int bY, int bM, int bD) :
                     fName(fN), lName(lN), bYear(bY), bMonth(bM), bDay(bD){}
-     Person::Person(const Person &p):fName(p.fName), lName(p.lName),
+     Person::Person(const Person &p) : fName(p.fName), lName(p.lName),
                                      bYear(p.bYear), bMonth(p.bMonth), bDay(p.bDay){}
      Person::~Person(){}
 
@@ -14,19 +14,19 @@ namespace PERSON
      {
        switch(bYear % 12)
        {
-         case 0:   return "Monkey";
-         case 1:   return "Rooster";
-         case 2:   return "Dog";
-         case 3:   return "Pig";
-         case 4:   return "Rat";
-         case 5:   return "Ox";
-         case 6:   return "Tiger";
-         case 7:   return "Rabbit";
-         case 8:   return "Dragon";
-         case 9:   return "Snake";
-         case 10:  return "Horse";
-         case 11:  return "Ram";
-         default:  return "Not available value";
+         case 0 :   return "Monkey";
+         case 1 :   return "Rooster";
+         case 2 :   return "Dog";
+         case 3 :   return "Pig";
+         case 4 :   return "Rat";
+         case 5 :   return "Ox";
+         case 6 :   return "Tiger";
+         case 7 :   return "Rabbit";
+         case 8 :   return "Dragon";
+         case 9 :   return "Snake";
+         case 10 :  return "Horse";
+         case 11 :  return "Ram";
+         default :  return "Not available value";
 
        }
      }
