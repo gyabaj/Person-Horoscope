@@ -20,7 +20,7 @@ namespace PERSON
        Person(const Person &p);
        ~Person();
 
-       std::string Get_Month_Horoscope();
-       std::string Get_Year_Horoscope();
+       std::string Get_Month_Horoscope() const;
+       std::string Get_Year_Horoscope() const;
    };
 }
