@@ -10,7 +10,7 @@ namespace PERSON
                                      bYear(p.bYear), bMonth(p.bMonth), bDay(p.bDay){}
      Person::~Person(){}
 
-     std::string Person::Get_Year_Horoscope()
+     std::string Person::Get_Year_Horoscope() const
      {
        switch(bYear % 12)
        {
@@ -30,7 +30,7 @@ namespace PERSON
 
        }
      }
-std::string Person::Get_Month_Horoscope()
+std::string Person::Get_Month_Horoscope() const
      {
         if((bMonth == 1 && bDay >=21) || (bMonth == 2 && bDay <= 18))
           return "Aquarius";
